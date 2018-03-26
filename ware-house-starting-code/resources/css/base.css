@@ -23,6 +23,7 @@ body {
 }
 
 a {
+  cursor: pointer;
   text-decoration: none;
   transition: .3s;
 }
@@ -30,6 +31,32 @@ a {
 a:hover {
   color: hsla(0, 0%, 29%, 1);
 }
+
+/*a {
+  cursor: pointer;
+  text-decoration: underline;
+}
+*/
+a:link {
+  color: #61bff9;
+}
+
+a:visited {
+  /*color: #466995;*/
+   color: #59301E;
+}
+
+/*a:hover {
+  text-decoration: none;
+}
+*/
+a:active {
+  color:#DBE9EE;
+}
+
+
+
+
 
 h1,
 h2,
@@ -72,7 +99,8 @@ input,
 textarea,
 select {
   border-radius: 3px;
-  background-color: hsla(0, 0%, 89%, 1);
+  /*background-color: hsla(0, 0%, 89%, 1);*/
+  background-color: #FFF4EA;
   padding: 1rem;
 }
 
@@ -80,7 +108,8 @@ select {
 
 .button {
   border-radius: 30px;
-  background-color: hsla(0, 0%, 13%, 1);
+  /*background-color: hsla(0, 0%, 13%, 1);*/
+  background-color: #D9B084;
   text-align: center;
   color: hsla(0, 0%, 93%, 1);
   transition: .25s;
@@ -248,7 +277,8 @@ header {
 }
 
 .search-bar .icon {
-  background-color: hsla(0, 0%, 89%, 1);
+  /*background-color: hsla(0, 0%, 89%, 1);*/
+  background-color: #F9E1CC;
   border-radius: 0 53px 53px 0;
   padding: 1rem;
 }
@@ -384,25 +414,4 @@ footer a {
   footer img {
     grid-column: auto;
   }
-}
-
-a {
-  cursor: pointer;
-  text-decoration: underline;
-}
-
-a:link {
-  color: #61bff9;
-}
-
-a:visited {
-  color: #466995;
-}
-
-a:hover {
-  text-decoration: none;
-}
-
-a:active, .question-link:active {
-  color:#DBE9EE;
 }
