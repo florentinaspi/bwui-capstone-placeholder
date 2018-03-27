@@ -193,7 +193,7 @@ select {
 }
 ul.breadcrumb {
     font-size: 90%;
-    padding: 2rem 4rem;
+    padding: 2rem 24rem;
     list-style: none;
     text-align: left;
     justify-self: flex-start;
