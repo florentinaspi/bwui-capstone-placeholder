@@ -19,6 +19,7 @@ form {
                        '. . . submit';
 /*  font-size: inherit;*/
   grid-gap: 10px;
+  text-align: left;
 }
 
 input {

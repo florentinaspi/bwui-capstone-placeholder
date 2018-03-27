@@ -29,16 +29,13 @@ a {
 }
 
 a:hover {
-  color: hsla(0, 0%, 29%, 1);
+  /*color: hsla(0, 0%, 29%, 1);*/
+  color: #D9B084;
 }
 
-/*a {
-  cursor: pointer;
-  text-decoration: underline;
-}
-*/
 a:link {
-  color: #61bff9;
+  /*color: #61bff9;*/
+  color: #59301E;
 }
 
 a:visited {
@@ -46,17 +43,9 @@ a:visited {
    color: #59301E;
 }
 
-/*a:hover {
-  text-decoration: none;
-}
-*/
 a:active {
   color:#DBE9EE;
 }
-
-
-
-
 
 h1,
 h2,
@@ -142,6 +131,7 @@ select {
 .product-list {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
   margin-bottom: 3.75rem;
   grid-gap: 10px;
 }
@@ -198,10 +188,15 @@ select {
 
 
 /* Reusable Component - Navigation Breadcrumbs */
+.breadcrumb {
+    text-align: left;
+}
 ul.breadcrumb {
+    font-size: 90%;
     padding: 2rem 4rem;
     list-style: none;
-    align-items: left;
+    text-align: left;
+    justify-self: flex-start;
 }
 ul.breadcrumb li {
     display: inline;
@@ -209,12 +204,13 @@ ul.breadcrumb li {
     align-items: left;
 }
 ul.breadcrumb li+li:before {
-    padding: 2rem;
+    padding: 0.5rem;
     color: hsla(0, 0%, 29%, 1);
     content: "/\00a0";
 }
 ul.breadcrumb li a {
-    color: hsla(0, 0%, 29%, 1);
+    /*color: hsla(0, 0%, 29%, 1);*/
+    color: #E0B6A1;
     text-decoration: none;
 }
 
@@ -243,7 +239,7 @@ ul.breadcrumb li a {
                        'footer';
    /*background-color: hsla(0, 0%, 93%, 1);*/
    background-color: #FFF4EA;
-   grid-gap: 2px;
+   grid-gap: 10px;
 }
 
 
@@ -313,6 +309,7 @@ nav {
   background: linear-gradient(to bottom, #f9e1cc 0%, #fff4ea 100%);
   /*border-top: 1px solid hsla(0, 0%, 85%, 1);*/
   padding: 1.313rem 24.25rem 1.313rem 25rem;
+  /*padding:1.3125rem;*/
   grid-gap: 10px;
 
 }
@@ -327,10 +324,25 @@ nav a:active {
   color:red;
 }
 
+nav a.active {
+    /*background-color: #4CAF50;*/
+    color: #D9B084;
+
+}
+
+nav a:hover:not(.active) {
+    /*background-color: #555;*/
+    color: #D9B084;
+}
+
+
+
 @media only screen and (max-width: 1100px) {
   header {
     grid-template-columns: 1fr;
     justify-items: center;
+    grid-gap: .75rem;
+    padding:1.3125rem 10rem;
   }
 
   .cart {
@@ -341,6 +353,8 @@ nav a:active {
 @media only screen and (max-width: 700px) {
   nav {
     grid-template-columns: 1fr;
+    grid-gap: .75rem;
+    padding:1.3125rem;
   }
 }
 
@@ -367,6 +381,9 @@ nav a:active {
   padding: .875rem 0;
 }
 
+#main .product-list-section{
+  justify-items: auto !important;
+}
 /* Footer */
 
 footer {

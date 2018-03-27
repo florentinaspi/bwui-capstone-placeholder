@@ -1,5 +1,5 @@
 #main {
-  text-align: left;
+  /*text-align: left;*/
   justify-items: auto;
 }
 
@@ -13,6 +13,7 @@
 }
 
 form {
+  text-align: left;
   display: grid;
   grid-template-columns: repeat(2, 2fr) 1fr;
   align-items: flex-end;
@@ -25,6 +26,7 @@ form {
 }
 
 .job-list {
+  text-align: left;
   border-top: solid 1px hsla(0, 0%, 59%, 1);
 }
 
