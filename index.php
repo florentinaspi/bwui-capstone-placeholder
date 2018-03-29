@@ -1,4 +1,17 @@
-<?php 
+<!--<?php 
 header("Location: https://florentinaspi.github.io/bwui-capstone-placeholder/ware-house-starting-code/",TRUE,301);
 exit;
-?>
+?>-->
+<html>
+<head>
+<title>HOME WareHouse</title>
+<meta http-equiv="refresh" content="2; URL=https://florentinaspi.github.io/bwui-capstone-placeholder/ware-house-starting-code/">
+<meta name="keywords" content="automatic redirection">
+</head>
+<body>
+If your browser doesn't automatically go there within a few seconds, 
+you may want to go to 
+<a href="https://florentinaspi.github.io/bwui-capstone-placeholder/ware-house-starting-code/">HOME WareHouse</a> 
+manually.
+</body>
+</html>
